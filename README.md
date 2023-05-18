@@ -1,4 +1,4 @@
-<img src="teste"> 
+<img src="https://github.com/Diihpunk/pokedex/blob/main/src/assets/images/logo-pokedex.png"> 
 
 
 
