@@ -1,0 +1,58 @@
+<div class="flex flex-wrap justify-end">
+    <div>
+     <div (click)="dialog.closeAll()">
+            <img src="/assets/images/closed.png" width="50" height="50" class="cursor-pointer">
+     </div> 
+    </div>
+</div>
+<div>
+    <div class="flex justify-center">
+        <div>
+            <img width="200" height="200" [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' + data.id + '.png'" alt="Imagem do Pokemon">
+        </div>
+    </div>
+</div>
+<div>
+    <div class="text-name mb-3">
+        <div class="flex justify-center mt-4 mb-4 items-center gap-0.5">
+        <img src="/assets/images/pokebola.png" style="width: 20px;height: 20px;">
+        {{pokemonName  | uppercase }}
+        </div>
+    </div>
+<div class="flex justify-center mt-3">
+    <div  *ngFor="let item of pokemonTypeList" >
+        <div ngClass="type-color-{{item.type.name}} p-1 m-1">
+            {{item.type.name}}
+        </div>
+    </div>
+</div>
+
+<div class="flex justify-center mt-5">
+    <div class="p-1 m-1">
+       <p><strong>{{pokemonPeso}} Kg</strong></p>
+    </div>
+    <div class="p-1 m-1">
+        <p><strong>{{pokemonAltura}} M</strong></p>
+     </div>
+</div>
+
+<div class="text-center text-name">
+    <div class="text-name mb-3">
+        <div class="flex justify-center mt-4 mb-4 items-center gap-0.5">
+        <img src="/assets/images/stats.png" style="width: 20px;height: 20px;">
+        Stats
+        </div>
+    </div>
+</div>
+<div>
+    <div  *ngFor="let item of pokemonStatusList; let i = index" class="m-3">
+        <div>
+            <span>{{item.stat.name | capitalizeFirstLetter }}: {{item.base_stat}}</span>
+          <div>
+            <mat-progress-bar  class="custom-progress-bar" [ngClass]="progressBarClasses(item.stat.name)" mode="determinate" [value]="item.base_stat"></mat-progress-bar> 
+          </div>
+        </div>
+      </div>
+</div>  
+
+</div>

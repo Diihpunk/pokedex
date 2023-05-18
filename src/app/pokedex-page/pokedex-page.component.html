@@ -1,0 +1,35 @@
+<div class="container mx-auto m-8">
+      <div class="flex justify-center">
+        <div>
+            <img src="/assets/images/logo-pokedex.png">
+        </div>
+      </div>
+    <div class="flex justify-center m-8">
+        <div>
+            <form [formGroup]="formularioBusca">
+                <div class="flex">
+                    <div>
+                        <input type="text" formControlName="busca" class="border-2 rounded-md" (blur)="search()">
+                    </div>
+                    <div>
+                        <img class="w-5 m-1" src="/assets/images/search_icon.svg">
+                    </div>
+                </div>
+          </form>
+        </div>
+    </div>
+    <div class="ball"></div>
+    <div class="flex flex-wrap text-white text-center justify-center" >
+        <div class="border-2 p-4 basis-44 rounded-md shadow-lg shadow-yellow-500/50 hover:bg-yellow-500 cursor-pointer box" *ngFor="let item of pokemonList; let i = index">
+            <div (click)="openDialog(item.codigoImagem)">
+            <div>
+                <img [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' + item.codigoImagem + '.png'" alt="Imagem do Pokemon">
+            </div>
+            <div>
+                <p class="m-t-3">{{item.name | capitalizeFirstLetter}}</p>
+            </div>
+            </div>  
+        </div>
+    </div>
+</div>
+

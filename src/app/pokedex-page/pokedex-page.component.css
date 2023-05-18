@@ -1,0 +1,10 @@
+
+.box {
+    flex: 0 0 185px;
+    margin: 10px;
+  }
+@media (min-width: 768px) {
+    .box {
+        flex-basis: 16.666%;
+    }
+  }
