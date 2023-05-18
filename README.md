@@ -1,10 +1,7 @@
-<div style="background:red">
-<img src="https://github.com/Diihpunk/pokedex/blob/main/src/assets/images/logo-pokedex.png"> 
 <img src="https://github.com/Diihpunk/pokedex/blob/main/src/assets/images/photos/desktop-pokedex.png"> 
 <img src="https://github.com/Diihpunk/pokedex/blob/main/src/assets/images/photos/mobile-pokedex.png"> 
 <img src="https://github.com/Diihpunk/pokedex/blob/main/src/assets/images/photos/mobile-pokedex-stats.png"> 
 
-</div>
 # Pokedex
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
