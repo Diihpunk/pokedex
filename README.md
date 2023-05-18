@@ -1,4 +1,4 @@
-<div>
+<div style="background:red">
 <img src="https://github.com/Diihpunk/pokedex/blob/main/src/assets/images/logo-pokedex.png"> 
 <img src="https://github.com/Diihpunk/pokedex/blob/main/src/assets/images/photos/desktop-pokedex.png"> 
 <img src="https://github.com/Diihpunk/pokedex/blob/main/src/assets/images/photos/mobile-pokedex.png"> 
